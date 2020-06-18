@@ -1,0 +1,10 @@
+.abajo{
+    margin-top: 100px;
+    transition: 1s;
+}
+.agrandar{
+    width: 0%;
+}
+.image img{
+    width: 100%;
+}

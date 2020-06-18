@@ -1,0 +1,107 @@
+body{
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contenedorextra{
+    background: rgba(255, 255, 255, 0.856);
+    width: 100%;
+    margin: auto;
+    margin-top: 56px;
+}
+body nav{
+background: #23374D;
+}
+
+.container .principal{
+    display: flex;
+    justify-content: space-between;
+}
+.container .slidecaja{
+    width: 70%;
+}
+.radio{
+    background: rgba(255, 255, 255, 0.856);
+    width: 29%;
+}
+.radio .caja{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+.radio .caja .titulo{
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+}
+.radio .caja .fotoapp {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.radio .caja .fotoapp img{
+    width: 50%;
+    border-radius: 10px;
+}
+.radio .caja button a{
+    color: white;
+
+}
+.radio .caja button{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container .espaciado{
+    margin: 10px 0px;
+}
+.container .descripcion{
+text-align: center;
+}
+.container .dos{
+    order: 1;
+}
+.container button i{
+    font-size: 12px;
+}
+.container button{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:800px){
+    .container .dos{
+        order: 0;
+    }
+    .container .slidecaja{
+        width: 100%;
+    }
+    .radio{
+        background: rgba(255, 255, 255, 0.856);
+        width: 100%;
+    }
+    .container .principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorextra{
+        margin-top: 66px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .radio .caja .fotoapp img{
+        width: 70%;
+    }
+}
+@media screen and (max-width:980px){
+    .radio .caja .fotoapp img{
+        width: 50%;
+    }
+}

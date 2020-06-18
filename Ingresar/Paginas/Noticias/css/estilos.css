@@ -1,0 +1,16 @@
+body header nav{
+background: #23374D;
+}
+.container .cajacontenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.container .carousel1{
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .container .carousel1{
+        width: 100%;
+    }
+}

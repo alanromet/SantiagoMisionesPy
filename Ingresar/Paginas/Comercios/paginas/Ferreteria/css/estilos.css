@@ -1,0 +1,237 @@
+/* header-------------------------- */
+body header nav{
+background: #23374D;
+}
+header nav .nav-item i{
+margin-right: 5px;
+}
+body .linea1{
+    width: 80%;
+}
+body .linea2{
+    width: 80%;
+}
+.contenedorprincipal{
+    display: flex;
+    justify-content: space-between;
+}
+/*NAV */
+header nav ul li{
+    display: none;
+}
+/* MAIN----------------------------- */
+.cajacontenedora{
+    width: 100%;
+    padding: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+.cajacontenedora .titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.cajacontenedora .titulo h3{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 45px;
+    margin-left: 20px;
+}
+.cajacontenedora .titulo a{
+    background: #23374D;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    margin-right: 20px;
+}
+.cajacontenedora .carousel{
+    margin-bottom: 10px;
+    width: 90%;
+    margin: auto;
+}.cajacontenedora .descripcion{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #666666;
+}
+/* Fotos de Publicidad */
+
+.cajacontenedora .cajapublicidad{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cajacontenedora .cajapublicidad .foto{
+    width: 30%;
+    margin: 10px;
+}
+.cajacontenedora .cajapublicidad .foto img{
+    border-radius: 5px;
+    width: 100%;
+    z-index:0;
+}
+
+
+/* Servicios */
+.cajacontenedora .cajaservicios{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.cajacontenedora .cajaservicios .datos{
+    color: #666666;
+    font-size: 14px;
+    width: 100%;
+}
+.cajacontenedora .cajaservicios .datos i{
+    color: #23374D;;
+}
+/* Contacto */
+.cajacontenedora .contacto{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.cajacontenedora .cajacontacto{
+    display: flex;
+    justify-content: space-around;
+}
+.cajacontenedora .contenido{
+    background: #23374D;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.cajacontenedora .contenido a{
+ color: white;
+ font-weight: 300;
+ display: inline-block;
+ font-size: 12px;
+}
+.cajacontenedora .contenido i{
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+/* --------------------------------------------------------------- */
+
+/* ASIDE */
+
+/* Categorias */
+aside{
+    position: relative;;
+    margin-top: 20px;
+    width: 40%;
+}
+aside .contenedor{
+    width: 100%;
+}
+aside .contenedor .categorias{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    background: #23374D;
+}
+aside .categorias h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 45px;
+}
+aside .contenedor .datos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    margin: 0 5px;
+}
+aside .contenedor .datos a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px 10px;
+}
+aside .contenedor .datos a:hover{
+    color :rgb(66, 157, 255);
+}
+aside .contenedor .datos i{
+    color: white;
+}
+/* Publicidad Slide */
+aside .publicidad{
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+}
+.publicidad .publicidadfotos img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.publicidad h3{
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width:990px){
+
+    .cajacontenedora .titulo a{
+        font-size:10px;
+    }
+    .cajacontenedora .texto p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+   /*--------------------------------  */
+    .contacto .cajacontacto {
+       display: flow-root;
+    }
+    .contacto .cajacontacto .contenido{
+        margin: 10px;
+        justify-content: center;
+    }
+    .contacto .cajacontacto .contenido a{
+        text-align: center;
+        
+   }
+   /* ASIDE---------------- */
+    aside .categorias h3{
+        font-size: 25px;
+    }
+    aside .categorias .datos a{
+        font-size: 15px;
+    }
+    aside .categorias .datos i{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:766px){
+    /*NAV */
+    header nav ul li{
+    display: block;
+}
+    .contenedorprincipal{
+        display: flow-root;
+    }
+    /* PublicidadFotos */
+    .cajacontenedora .cajapublicidad .foto{
+        width: 45%;
+        /* margin: 15px; */
+    }
+    .cajacontenedora .cajaservicios p{
+        font-size: 12px;
+    }
+   /* ASIDE---------------- */
+    aside .contenedor{
+        display: none;
+    }
+}
+
